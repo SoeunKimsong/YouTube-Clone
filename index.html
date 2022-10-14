@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>YouTube</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="media.css">
+
+	<link rel="icon" href="image/youtube.png">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<script src="script.js" defer></script>
+</head>
+
+<body class="">
+
+	<!-- topbar -->
+
+	<div class="topbar">
+		<div class="nav-toggle">
+			<i class="material-icons">menu</i>
+		</div>
+
+		<div class="logo" onclick="document.location='index.html'">
+			<img src="image/youtube.png" alt="youtube logo" title="YouTube Home">
+			<span>YouTube</span>
+		</div>
+
+		<div class="searchbar">
+			<button class="back" title="Back"><i class="material-icons">arrow_back</i></button>
+			<input type="search" placeholder="Search">
+			<button title="Search" class="search-icon"><i class="material-icons">search</i></button>
+			<button title="Search with your voice" class="mic"><i class="material-icons">mic</i></button>
+		</div>
+
+
+		<div class="more">
+			<button title="Search" class="search-show"><i class="material-icons">search</i></button>
+
+			<div class="more-option">
+				<i class="material-icons settings-icon" title="Settings">more_vert</i>
+				<ul class="alloptions options">
+					<li><i class="material-icons">account_box</i>Your date in YouTube</li>
+					<hr>
+					<li class="theme-setting">
+						<i class="material-icons">mode_night</i>Appearance: <span class="theme">Dark</span>
+						<i class="material-icons">chevron_right</i>
+					</li>
+
+					<li><i class="material-icons">translate</i>Language: English</li>
+					<li><i class="material-icons">admin_panel_settings</i>Restricted Mode: Off</li>
+					<li><i class="material-icons">language</i>Location: Cambodia</li>
+					<li><i class="material-icons">keyboard</i>Keyboard shortcuts</li>
+					<hr>
+					<li><i class="material-icons">settings</i>Settings</li>
+					<hr>
+					<li><i class="material-icons">help</i>Help</li>
+					<li><i class="material-icons">feedback</i>Send feedback</li>
+				</ul>
+
+				<div class="theme-option options">
+					<h4><i class="material-icons theme-back">arrow_back</i>Appearence</h4>
+					<p><small>Setting applies to this browser only</small></p>
+					<ul>
+						<li class="active dark-mode"><i class="material-icons">done</i>Dark theme</li>
+						<li><i class="material-icons light-mode">done</i>Light theme</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="signin-bar">
+				<i class="material-icons">account_circle</i>
+				<span>Sign in</span>
+			</div>
+		</div>
+	</div>
+
+	<main>
+
+		<!-- small sidebar -->
+		<div class="sidebar1 sidebar">
+			<nav>
+				<ul>
+					<li><i class="material-icons" title="Home">home</i>Home</li>
+					<li><i class="material-icons" title="Explore">explore</i>Explore</li>
+					<li><i class="material-icons" title="Shorts">slideshow</i>Shorts</li>
+					<li><i class="material-icons" title="Subscriptions">subscriptions</i>Subscriptions</li>
+					<li><i class="material-icons" title="Library">video_library</i>Library</li>
+					<li><i class="material-icons" title="History">history</i>History</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- full sidebar -->
+		<div class="sidebar2 sidebar">
+			<nav>
+				<ul>
+					<li><i class="material-icons" title="Home">home</i>Home</li>
+					<li><i class="material-icons" title="Explore">explore</i>Explore</li>
+					<li><i class="material-icons" title="Shorts">slideshow</i>Shorts</li>
+					<li><i class="material-icons" title="Subscriptions">subscriptions</i>Subscriptions</li>
+					<hr>
+					<li><i class="material-icons" title="Library">video_library</i>Library</li>
+					<li><i class="material-icons" title="History">history</i>History</li>
+				</ul>
+			</nav>
+
+			<div class="signin">
+				<p>Sign in to like videos, comment, and subscribe.</p>
+				<div class="signin-bar">
+					<i class="material-icons">account_circle</i>
+					<span>Sign in</span>
+				</div>
+			</div>
+
+			<div class="explore">
+				<h3>EXPLORE</h3>
+				<ul>
+					<li><i class="material-icons" title="Music">music_note</i>Music</li>
+					<li><i class="material-icons" title="Sports">emoji_events</i>Sports</li>
+					<li><i class="material-icons" title="Gaming">sports_esports</i>Gaming</li>
+					<li><i class="material-icons" title="News">newspaper</i>News</li>
+					<li><i class="material-icons" title="Live">sensors</i>Live</li>
+					<li><i class="material-icons" title="Fashion & Beauty">checkroom</i>Fashion & Beauty</li>
+					<li><i class="material-icons" title="Learning">lightbulb</i>Learning</li>
+					<li><i class="material-icons" title="360 Video">360</i>360<sup>o</sup> Video</li>
+				</ul>
+			</div>
+
+			<hr>
+
+			<div class="browse-channel">
+				<i class="material-icons">add_circle</i>
+				<span>Browse channels</span>
+			</div>
+
+			<hr>
+
+			<div class="more">
+				<h3>MORE FROM YOUTUBE</h3>
+				<ul>
+					<li><i class="material-icons" title="YouTube Music">play_circle_filled</i>YouTube Music</li>
+					<li><i class="material-icons" title="YouTube Kids">smart_display</i>YouTube Kids</li>
+					<li><i class="material-icons" title="YouTube TV">ondemand_video</i>YouTube TV</li>
+				</ul>
+			</div>
+
+			<hr>
+
+			<div class="special">
+				<ul>
+					<li><i class="material-icons">settings</i>Settings</li>
+					<li><i class="material-icons">flag</i>Report history</li>
+					<li><i class="material-icons">help</i>Help</li>
+					<li><i class="material-icons">feedback</i>Send feedback</li>
+				</ul>
+			</div>
+
+			<hr>
+
+			<div class="aboutUs">
+				<a href="#">About</a>
+				<a href="#">Press</a>
+				<a href="#">Copyright</a>
+				<a href="#">Contact us</a>
+				<a href="#">Creators</a>
+				<a href="#">Advertise</a>
+				<a href="#">Developers</a>
+				<br>
+				<br>
+				<a href="#">Terms</a>
+				<a href="#">Privacy</a>
+				<a href="#">Policy & Safety</a>
+				<br>
+				<a href="#">How YouTube works</a>
+				<br>
+				<a href="#">Test new features</a>
+			</div>
+
+			<p class="credit">&copy 2022 Google LLC</p>
+
+		</div>
+
+
+		<!-- main section -->
+
+		<div class="main">
+			<div class="type">
+				<span>All</span>
+				<span>Music</span>
+				<span>Live</span>
+				<span>Gaming</span>
+				<span>Deep House</span>
+				<span>Instrumental</span>
+				<span>JavaScript</span>
+				<span>Computer Science</span>
+				<span>Recently uploaded</span>
+				<span>Watched</span>
+			</div>
+
+			<section class="vdo-container">
+				<!-- video -->
+				<div class="allvideo">
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding2.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding3.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding2.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding3.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding2.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+				<!-- short video -->
+				<div class="shorts">
+					<div class="title">
+						<i class="material-icons">slideshow</i>Shorts
+					</div>
+					<div class="shortvideo">
+						<div class="video">
+							<div class="thumbnail">
+								<img src="image/short.jpg">
+							</div>
+							<i class="material-icons more">more_vert</i>
+							<h3>Useful coding tricks</h3>
+							<p>150K views</p>
+						</div>
+						<div class="video">
+							<div class="thumbnail">
+								<img src="image/short.jpg">
+							</div>
+							<i class="material-icons more">more_vert</i>
+							<h3>Useful coding tricks</h3>
+							<p>150K views</p>
+						</div>
+						<div class="video">
+							<div class="thumbnail">
+								<img src="image/short.jpg">
+							</div>
+							<i class="material-icons more">more_vert</i>
+							<h3>Useful coding tricks</h3>
+							<p>150K views</p>
+						</div>
+						<div class="video">
+							<div class="thumbnail">
+								<img src="image/short.jpg">
+							</div>
+							<i class="material-icons more">more_vert</i>
+							<h3>Useful coding tricks</h3>
+							<p>150K views</p>
+						</div>
+						<div class="video">
+							<div class="thumbnail">
+								<img src="image/short.jpg">
+							</div>
+							<i class="material-icons more">more_vert</i>
+							<h3>Useful coding tricks</h3>
+							<p>150K views</p>
+						</div>
+						<div class="video">
+							<div class="thumbnail">
+								<img src="image/short.jpg">
+							</div>
+							<i class="material-icons more">more_vert</i>
+							<h3>Useful coding tricks</h3>
+							<p>150K views</p>
+						</div>
+						<div class="video">
+							<div class="thumbnail">
+								<img src="image/short.jpg">
+							</div>
+							<i class="material-icons more">more_vert</i>
+							<h3>Useful coding tricks</h3>
+							<p>150K views</p>
+						</div>
+						<div class="video">
+							<div class="thumbnail">
+								<img src="image/short.jpg">
+							</div>
+							<i class="material-icons more">more_vert</i>
+							<h3>Useful coding tricks</h3>
+							<p>150K views</p>
+						</div>
+						<div class="video">
+							<div class="thumbnail">
+								<img src="image/short.jpg">
+							</div>
+							<i class="material-icons more">more_vert</i>
+							<h3>Useful coding tricks</h3>
+							<p>150K views</p>
+						</div>
+						<div class="video">
+							<div class="thumbnail">
+								<img src="image/short.jpg">
+							</div>
+							<i class="material-icons more">more_vert</i>
+							<h3>Useful coding tricks</h3>
+							<p>150K views</p>
+						</div>
+
+					</div>
+
+					<button class="showshorts" title="See more"><i class="material-icons">expand_more</i></button>
+				</div>
+
+				<!-- video -->
+				<div class="allvideo">
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding3.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding2.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding3.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding2.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding3.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="video" onclick="document.location = 'video/video.html'">
+						<div class="thumbnail" style="background-image: url('image/coding2.jpg');">
+							<div class="length">10:00</div>
+						</div>
+
+						<div class="detail">
+							<a href="#" class="channel">
+								<img src="image/profile.jpg">
+							</a>
+
+							<div class="title">
+								<h4>
+									How to become a successful software engineer | Senior Software Engineer Tips |
+								</h4>
+								<div class="channel-name">Mr. Programmer</div>
+								<div class="info">
+									1M views <i class="material-icons">circle</i> 3 months ago
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</section>
+
+		</div>
+	</main>
+
+</body>
+
+</html>

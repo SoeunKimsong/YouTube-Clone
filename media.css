@@ -1,0 +1,92 @@
+@media screen and (max-width: 1300px){
+    .sidebar1{
+        display: block;
+    }
+
+    .sidebar2{
+        display: block;
+        position: absolute;
+        z-index: 50;
+        transition: .5s;
+        left: -100%;
+    }
+    .sidebar2.hide{
+        display: block;
+        left: 0;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    *{
+        font-size: .95em;
+    }
+    .allvideo{
+        grid-template-columns: repeat(3, auto);
+    }
+    .allvideo .video .thumbnail{
+        height: 16vw;
+    }
+
+    .btn-option{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-option button{
+        width: 90%;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .allvideo{
+        grid-template-columns: repeat(2, auto);
+    }
+    .allvideo .video .thumbnail{
+        height: 20vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar1{
+        display: none;
+    }
+    .sidebar1.hide{
+        display: none;
+    }
+
+    .topbar .searchbar{
+        position: absolute;
+        width: 100%;
+        background-color: var(--grey1);
+        z-index: 60;
+        padding: 10px 0;
+        top: -100%;
+    }
+    .topbar .searchbar.showsearch{
+        top: 0;
+    }
+
+    .topbar .searchbar input{
+        width: 90%;
+    }
+    .topbar .searchbar button{
+        width: 60px;
+    }
+    .topbar .searchbar .mic{
+        width: 40px;
+        margin: 0 10px;
+    }
+
+
+    .topbar .more{
+        padding-right: 0;
+    }
+
+    .more .search-show{
+        display: block;
+    }
+    .searchbar .back{
+        display: block;
+    }
+}

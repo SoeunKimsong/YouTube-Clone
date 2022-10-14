@@ -1,0 +1,66 @@
+@media screen and (max-width: 1000px) {
+    main{
+        grid-template-columns: auto;
+    }
+
+    .watching video{
+        height: 55vw;
+    }
+
+    .related{
+        width: 100%;
+    }
+    .related .allvideo{
+        position: static;
+        width: 100%;
+    }
+    .related .video-detail{
+        width: calc(100% - 120px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .watching .viewDate .date{
+        display: none;
+    }
+
+    .topbar .searchbar{
+        position: absolute;
+        width: 100%;
+        background-color: var(--grey1);
+        z-index: 60;
+        padding: 10px 0;
+        top: -100%;
+    }
+    .topbar .searchbar.showsearch{
+        top: 0;
+    }
+
+    .topbar .searchbar input{
+        width: 90%;
+    }
+    .topbar .searchbar button{
+        width: 60px;
+    }
+    .topbar .searchbar .mic{
+        width: 40px;
+        margin: 0 10px;
+    }
+
+
+    .topbar .more{
+        padding-right: 0;
+    }
+
+    .more .search-show{
+        display: block;
+        cursor: pointer;
+    }
+    .searchbar .back{
+        display: block;
+    }
+
+    .watching .btn-container .more-btn{
+        display: none;
+    }
+}
